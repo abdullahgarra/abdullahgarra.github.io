@@ -38,6 +38,9 @@ Advised by Dr. Mahmood Sharif
 
 **B.Sc. in Computer Science**, Tel Aviv University
 
+## Experience 
+**Graduate Researcher**, Tel Aviv University (Dec. 2023 – Present)
+
 ## Projects
 
 ##### Security-Incident Prediction from Text and Network Measurements (M.Sc. Thesis — submitting soon)
