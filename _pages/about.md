@@ -33,7 +33,7 @@ I work at the intersection of computer security and machine learning. I’m inte
 
 ## Education
 
-**M.Sc. in Computer Science**, Tel Aviv University  (expected April, 2026)
+**M.Sc. in Computer Science**, Tel Aviv University  (expected April, 2026)  
 Advised by Dr. Mahmood Sharif
 
 **B.Sc. in Computer Science**, Tel Aviv University
