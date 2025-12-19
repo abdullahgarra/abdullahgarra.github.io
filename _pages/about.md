@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>Tel Aviv University</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -24,8 +24,9 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+I am a Computer Science M.Sc. student at [Tel Aviv University](https://english.tau.ac.il/) and part of the Privacy, Learning, Usability, and Security ([PLUS](https://plus-tau.github.io/) research group, advised by [Dr. Mahmood Sharif](https://mahmoods01.github.io/).
 
-I am interested in the security and privacy of computing systems, particularly at the intersection of machine learning and security. My work focuses both on using ML to support security tasks in real-world systems, and on understanding the security implications of ML-based components themselves—such as retrieval systems and emerging agentic architectures.
+I work at the intersection of computer security and machine learning. I’m interested in using ML for security and in the security of ML systems, from understanding vulnerability mechanisms to studying how they show up in real implementations such as retrieval and tool-using LLM schemes. 
 
 
 
