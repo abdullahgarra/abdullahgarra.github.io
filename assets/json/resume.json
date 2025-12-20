@@ -120,7 +120,8 @@
     { "language": "Arabic", "fluency": "Native" },
     { "language": "English", "fluency": "Fluent" },
     { "language": "Hebrew", "fluency": "Fluent" }
-  ]
+  ],
+  
   "interests": [
   {
     "name": "Sports & Outdoors",
@@ -138,5 +139,5 @@
     "name": "Podcasts & Media",
     "keywords": ["Long-form podcasts 🎧"]
   }
-  ]
+  ],
 }
