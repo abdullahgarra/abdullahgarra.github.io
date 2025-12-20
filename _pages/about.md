@@ -51,7 +51,7 @@ My M.Sc. thesis studies how public signals—geopolitical text and Internet-wide
 ---
 
 ##### ccnews2024plus: Extending CC-News Beyond June 2024 (Dataset)
-I released a cleaned extension of the CC-News Common Crawl corpus that continues the work started by [stanford-oval/ccnews] (https://huggingface.co/datasets/stanford-oval/ccnews). The dataset extends coverage beyond June 2024 and applies filtering and deduplication using [DataTrove](https://github.com/huggingface/datatrove).
+I released a cleaned extension of the CC-News Common Crawl corpus that continues the work started by [stanford-oval/ccnews](https://huggingface.co/datasets/stanford-oval/ccnews). The dataset extends coverage beyond June 2024 and applies filtering and deduplication using [DataTrove](https://github.com/huggingface/datatrove).
 
 [Hugging Face dataset →](https://huggingface.co/datasets/AbedGarra/ccnews2024plus)
 
