@@ -36,7 +36,7 @@
     {
       "name": "Tel Aviv University",
       "position": "Graduate RA",
-      "startDate": "2023-12",
+      "startDate": "2023-12"
     },
     {
       "name": "Tel Aviv University",
@@ -133,11 +133,7 @@
   },
   {
     "name": "Music & Audio",
-    "keywords": ["Heavy music listener 🎶"]
-  },
-  {
-    "name": "Podcasts & Media",
-    "keywords": ["Long-form podcasts 🎧"]
+    "keywords": ["Heavy music listener 🎶", "Long-form podcasts 🎧"]
   }
   ]
 }
