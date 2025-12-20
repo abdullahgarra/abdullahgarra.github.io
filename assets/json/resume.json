@@ -11,9 +11,8 @@
     {
       "institution": "Tel Aviv University",
       "area": "Computer Science",
-      "studyType": "M.Sc.",
+      "studyType": "M.Sc. , GPA: 96",
       "endDate": "2026",
-      "gpa": "96",
       "courses": [],
       "summary": "Advisor: Dr. Mahmood Sharif. Thesis: Reliable Security-Incident Prediction from Text and Network Measurements."
     },
@@ -121,5 +120,23 @@
     { "language": "Arabic", "fluency": "Native" },
     { "language": "English", "fluency": "Fluent" },
     { "language": "Hebrew", "fluency": "Fluent" }
+  ]
+  "outside interests": [
+  {
+    "name": "Sports & Outdoors",
+    "keywords": ["Morning swims 🏊‍♂️", "Gym training 🏋️‍♂️", "Soccer ⚽"]
+  },
+  {
+    "name": "Ideas & Thinking 🧩🧠",
+    "keywords": ["Thought experiments", "Debates & documentaries", "Ethics & philosophy"]
+  },
+  {
+    "name": "Music & Audio",
+    "keywords": ["Heavy music listener 🎶"]
+  },
+  {
+    "name": "Podcasts & Media",
+    "keywords": ["Long-form podcasts 🎧"]
+  }
   ]
 }
