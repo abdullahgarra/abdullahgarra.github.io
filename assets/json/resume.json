@@ -87,8 +87,8 @@
       "name": "Fingerprinting Embedding Models for Black-Box Retrieval",
       "description": "Research project investigating input–output level profiling methods for identifying embedding models under black-box access.",
       "highlights": [
-        "Studied stability and transferability of semantic similarity patterns across models",
-        "Focused on system-level implications of opaque ML components"
+        "Studying stability and transferability of semantic similarity patterns across models",
+        "Focusing on system-level implications of opaque ML components"
       ]
     },
     {
