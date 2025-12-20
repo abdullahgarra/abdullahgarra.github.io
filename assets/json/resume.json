@@ -36,8 +36,14 @@
   "work": [
     {
       "name": "Tel Aviv University",
+      "position": "Graduate RA",
+      "startDate": "2023-12",
+    },
+    {
+      "name": "Tel Aviv University",
       "position": "Teaching Assistant",
       "startDate": "2025-02",
+      "endDate": "2025-09",
       "summary": "Mentored students through real-world ML-based security projects.",
       "highlights": [
         "Workshop on Usable Security and Privacy (Dr. Mahmood Sharif)",
