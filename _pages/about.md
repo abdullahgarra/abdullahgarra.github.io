@@ -43,11 +43,10 @@ Advised by Dr. Mahmood Sharif
 
 ## Projects
 
-##### Security-Incident Prediction from Text and Network Measurements (M.Sc. Thesis — submitting soon)
+##### Security-Incident Prediction from Text and Network Measurements (M.Sc. Thesis — submitting to ESORICS '26)
 My M.Sc. thesis studies how public signals—geopolitical text and Internet-wide measurements—can be used to forecast organization-level security incidents at a fixed horizon. I focus on end-to-end evaluation under realistic constraints and on the systems work needed to make such pipelines scalable.
 
-<!-- link to thesis/preprint when ready -->
-
+[Paper (PDF)](/assets/pdf/Forecasting_Security_Incidents_Using_Geopolitical_Data.pdf)
 ---
 
 ##### ccnews2024plus: Extending CC-News Beyond June 2024 (Dataset)
