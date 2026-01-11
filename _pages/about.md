@@ -31,17 +31,17 @@ I am a Computer Science M.Sc. student at [Tel Aviv University](https://english.t
 I work at the intersection of computer security and machine learning. I’m interested in using ML for security and in the security of ML systems, from understanding vulnerability mechanisms to studying how they show up in real implementations such as retrieval and tool-using LLM schemes. 
 
 
-## Education
+## **Education**
 
 **M.Sc. in Computer Science**, Tel Aviv University  (expected April, 2026)  
 Advised by Dr. Mahmood Sharif
 
 **B.Sc. in Computer Science**, Tel Aviv University
 
-## Experience 
+## **Experience** 
 **Graduate Researcher**, Tel Aviv University (Dec. 2023 – Present)
 
-## Projects
+## **Projects**
 
 ##### Security-Incident Prediction from Text and Network Measurements (M.Sc. Thesis — submitted to ESORICS '26)
 My M.Sc. thesis studies how public signals—geopolitical text and Internet-wide measurements—can be used to forecast organization-level security incidents at a fixed horizon. I focus on end-to-end evaluation under realistic constraints and on the systems work needed to make such pipelines scalable. [Paper](/assets/pdf/Forecasting_Security_Incidents_Using_Geopolitical_Data.pdf) 
@@ -62,7 +62,7 @@ Machine Learning with Graphs Course project analyzing transferability behavior i
 
 ---
 
-## Awards
+## **Awards**
 
 - High School Excellence Scholarship for University Studies (merit-based; covered undergraduate tuition)
 
