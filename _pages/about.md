@@ -41,9 +41,9 @@ Advised by Dr. Mahmood Sharif
 ## **Experience** 
 **Graduate Researcher**, Tel Aviv University (Dec. 2023 – Present)
 
-## **Projects**
+## **Papers & Projects**
 
-##### Security-Incident Prediction from Text and Network Measurements (M.Sc. Thesis — submitted to ESORICS '26)
+##### Security-Incident Prediction from Text and Network Measurements (Submitted to ESORICS '26)
 My M.Sc. thesis studies how public signals—geopolitical text and Internet-wide measurements—can be used to forecast organization-level security incidents at a fixed horizon. I focus on end-to-end evaluation under realistic constraints and on the systems work needed to make such pipelines scalable. [Paper](/assets/pdf/Forecasting_Security_Incidents_Using_Geopolitical_Data.pdf) 
 
 ---
