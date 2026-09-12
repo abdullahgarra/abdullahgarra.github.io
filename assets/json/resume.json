@@ -44,10 +44,7 @@
       "startDate": "2025-02",
       "endDate": "2025-09",
       "summary": "Mentored students through real-world ML-based security projects.",
-      "highlights": [
-        "Workshop on Usable Security and Privacy (Dr. Mahmood Sharif)",
-        "Workshop on Intrusion Detection with ML (Dr. David Movshovitz)"
-      ]
+      "highlights": ["Workshop on Usable Security and Privacy (Dr. Mahmood Sharif)", "Workshop on Intrusion Detection with ML (Dr. David Movshovitz)"]
     },
     {
       "name": "Tel Aviv University",
@@ -55,10 +52,7 @@
       "startDate": "2024-04",
       "endDate": "2024-10",
       "summary": "Evaluated correctness and robustness of student implementations in C and Python.",
-      "highlights": [
-        "Tested multiple variants of the K-Means algorithm",
-        "Used Valgrind to verify memory allocations and detect leaks"
-      ]
+      "highlights": ["Tested multiple variants of the K-Means algorithm", "Used Valgrind to verify memory allocations and detect leaks"]
     },
     {
       "name": "Tel Aviv University",
@@ -112,7 +106,16 @@
     },
     {
       "name": "Topics",
-      "keywords": ["Machine Learning", "NLP", "Cybersecurity", "RAG", "Embedding Models", "Distributed Training", "Time-Series Forecasting", "Networks"]
+      "keywords": [
+        "Machine Learning",
+        "NLP",
+        "Cybersecurity",
+        "RAG",
+        "Embedding Models",
+        "Distributed Training",
+        "Time-Series Forecasting",
+        "Networks"
+      ]
     }
   ],
 
@@ -121,19 +124,19 @@
     { "language": "English", "fluency": "Fluent" },
     { "language": "Hebrew", "fluency": "Fluent" }
   ],
-  
+
   "interests": [
-  {
-    "name": "Sports & Outdoors",
-    "keywords": ["Morning swims 🏊‍♂️", "Gym training 🏋️‍♂️", "Soccer ⚽"]
-  },
-  {
-    "name": "Ideas & Thinking 🧩🧠",
-    "keywords": ["Thought experiments", "Debates & documentaries", "Ethics & philosophy"]
-  },
-  {
-    "name": "Music & Audio",
-    "keywords": ["Heavy music listener 🎶", "Long-form podcasts 🎧"]
-  }
+    {
+      "name": "Sports & Outdoors",
+      "keywords": ["Morning swims 🏊‍♂️", "Gym training 🏋️‍♂️", "Soccer ⚽"]
+    },
+    {
+      "name": "Ideas & Thinking 🧩🧠",
+      "keywords": ["Thought experiments", "Debates & documentaries", "Ethics & philosophy"]
+    },
+    {
+      "name": "Music & Audio",
+      "keywords": ["Heavy music listener 🎶", "Long-form podcasts 🎧"]
+    }
   ]
 }
