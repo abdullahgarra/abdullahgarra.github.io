@@ -26,25 +26,35 @@ latest_posts:
   
 ---
 
-I am a Computer Science M.Sc. student at [Tel Aviv University](https://english.tau.ac.il/) and part of the Privacy, Learning, Usability, and Security ([PLUS](https://plus-tau.github.io/)) research group, advised by [Dr. Mahmood Sharif](https://mahmoods01.github.io/).
+I am a first-year Ph.D. student in Computer Science at [UMass Amherst](https://www.cics.umass.edu/), advised by [Prof. Eugene Bagdasaryan](https://people.cs.umass.edu/~eugene/).
 
-I work at the intersection of computer security and machine learning. I’m interested in using ML for security and in the security of ML systems, from understanding vulnerability mechanisms to studying how they show up in real implementations such as retrieval and tool-using LLM schemes. 
+My research interests lie at the intersection of computer security and machine learning. I am broadly interested in the security and reliability of AI systems, including adversarial behavior, secure and trustworthy LLM-based systems, and the use of machine learning for security.
 
+Before joining UMass Amherst, I completed my M.Sc. in Computer Science at [Tel Aviv University](https://english.tau.ac.il/), where I was a member of the Privacy, Learning, Usability, and Security ([PLUS](https://plus-tau.github.io/)) research group advised by [Dr. Mahmood Sharif](https://mahmoods01.github.io/).
 
 ## **Education**
 
-#### M.Sc. in Computer Science, Tel Aviv University  (expected April, 2026)  
+#### Ph.D. in Computer Science, UMass Amherst (Sep. 2026 – Present)
+
+Advised by Prof. Eugene Bagdasaryan
+
+#### M.Sc. in Computer Science, Tel Aviv University (May. 2024 - May. 2026)
+
 Advised by Dr. Mahmood Sharif
 
 #### B.Sc. in Computer Science, Tel Aviv University
 
-## **Experience** 
-##### Graduate Researcher, Tel Aviv University (Dec. 2023 – Present)
+## **Experience**
+
+##### Graduate Researcher, UMass Amherst (Sep. 2026 – Present)
+
+##### Graduate Researcher, Tel Aviv University (Dec. 2023 – Oct. 2026)
+
 
 ## **Papers & Projects**
 
-##### Security-Incident Prediction from Text and Network Measurements (Submitted to ESORICS '26)
-My M.Sc. thesis studies how public signals—geopolitical text and Internet-wide measurements—can be used to forecast organization-level security incidents at a fixed horizon. I focus on end-to-end evaluation under realistic constraints and on the systems work needed to make such pipelines scalable. [Paper](/assets/pdf/Forecasting_Security_Incidents_Using_Geopolitical_Data.pdf) 
+##### Security-Incident Prediction from Text and Network Measurements
+A study on how public signals—geopolitical text and Internet-wide measurements—can be used to forecast organization-level security incidents at a fixed horizon. I focus on end-to-end evaluation under realistic constraints and on the systems work needed to make such pipelines scalable. [Paper](/assets/pdf/Forecasting_Security_Incidents_Using_Geopolitical_Data.pdf) 
 
 ---
 
