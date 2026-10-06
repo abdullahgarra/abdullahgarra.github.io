@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🧪 Acknowledged in [*TROPT: An Open Framework for Unifying and Advancing Discrete Text Optimization*](https://arxiv.org/abs/2606.23496) for assistance with experiments.
+🧪 Acknowledged in [TROPT: An Open Framework for Unifying and Advancing Discrete Text Optimization](https://arxiv.org/abs/2606.23496) for assistance with experiments.
