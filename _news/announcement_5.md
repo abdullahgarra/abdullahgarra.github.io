@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📄 TellTail is now my first paper on ArXiv, [*The TellTail of Embeddings: Fingerprinting Retrievers in Black-Box Systems
-*](https://arxiv.org/abs/2610.04026)
+📄 TellTail is now my first paper on ArXiv, [**The TellTail of Embeddings: Fingerprinting Retrievers in Black-Box Systems**](https://arxiv.org/abs/2610.04026)
