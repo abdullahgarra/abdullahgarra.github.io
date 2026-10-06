@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🚀 Another paper is now on ArXiv: [Forecasting Cybersecurity Incidents Using Geopolitical Data and Large Language Models](https://arxiv.org/abs/2610.04798)
+🚀 Another paper is now on arXiv: [Forecasting Cybersecurity Incidents Using Geopolitical Data and Large Language Models](https://arxiv.org/abs/2610.04798)
