@@ -1,0 +1,560 @@
+/*******************************************************************************
+ * Custom styles (loaded last, overrides theme defaults)
+ ******************************************************************************/
+
+$mono-stack: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+// Accent colors
+:root {
+  --global-theme-color: #5b4bdb;
+  --global-hover-color: #5b4bdb;
+  --accent-2: #0f9d8a;
+  --accent-soft: rgba(91, 75, 219, 0.08);
+  --accent-border: rgba(91, 75, 219, 0.25);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #a99bff;
+  --global-hover-color: #a99bff;
+  --accent-2: #4fd1b8;
+  --accent-soft: rgba(169, 155, 255, 0.1);
+  --accent-border: rgba(169, 155, 255, 0.3);
+}
+
+// Hero
+.post-header .post-title .font-weight-bold {
+  background: linear-gradient(90deg, var(--global-theme-color), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-tagline {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5ch;
+  font-family: $mono-stack;
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+
+  .hero-prompt {
+    color: var(--accent-2);
+    font-weight: 600;
+  }
+
+  .hero-typed {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 2px solid var(--global-theme-color);
+    animation:
+      hero-typing 1.8s steps(31, end) 0.4s forwards,
+      hero-caret 0.9s step-end infinite;
+  }
+}
+
+@keyframes hero-typing {
+  to {
+    width: 31ch;
+  }
+}
+
+@keyframes hero-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+// Research interests
+.interest-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 0.5rem;
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--accent-border);
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--global-theme-color);
+    font-size: 0.85rem;
+    transition:
+      transform 0.15s ease,
+      background 0.15s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+      background: var(--accent-border);
+    }
+  }
+}
+
+// Section headings on the about page
+.post article > h2,
+.about-details h2 {
+  position: relative;
+  margin-top: 2.5rem;
+  padding-bottom: 0.35rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2.5rem;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--global-theme-color), var(--accent-2));
+  }
+}
+
+// Publications: subtle hover highlight with an accent bar
+.publications ol.bibliography li {
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+  padding: 0.5rem 0.25rem;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    background: var(--accent-soft);
+    border-left-color: var(--global-theme-color);
+  }
+
+  .abbr .badge {
+    background-color: var(--global-theme-color) !important;
+  }
+}
+
+// Project cards
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-border);
+    box-shadow: 0 8px 24px -12px var(--global-theme-color);
+  }
+
+  .project-card-kicker {
+    font-family: $mono-stack;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--global-text-color-light);
+  }
+
+  .project-card-title {
+    margin: 0.3rem 0 0.4rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--global-theme-color);
+  }
+
+  p {
+    flex: 1;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .project-card-link {
+    font-size: 0.85rem;
+    color: var(--accent-2);
+  }
+}
+
+// Timeline (education / experience)
+ul.about-timeline {
+  list-style: none;
+  margin: 1rem 0 0.5rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--accent-border);
+
+  li {
+    position: relative;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc(-1.25rem - 6px);
+      top: 0.4rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--global-bg-color);
+      border: 2px solid var(--global-theme-color);
+    }
+
+    &:first-child::before {
+      background: var(--global-theme-color);
+    }
+  }
+
+  .timeline-date {
+    display: block;
+    font-family: $mono-stack;
+    font-size: 0.75rem;
+    color: var(--global-text-color-light);
+  }
+
+  .timeline-sub {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-tagline .hero-typed {
+    width: auto;
+    white-space: normal;
+    animation: hero-caret 0.9s step-end infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-tagline .hero-typed {
+    width: auto;
+    animation: none;
+  }
+
+  .interest-chips .chip,
+  .project-card,
+  .publications ol.bibliography li {
+    transition: none;
+  }
+
+  .interest-chips .chip:hover,
+  .project-card:hover {
+    transform: none;
+  }
+}
+
+/*******************************************************************************
+ * Motion: entrance + scroll reveal
+ ******************************************************************************/
+
+// Soft animated glow behind the hero
+.post-header {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -2.5rem -2rem auto -2rem;
+    height: 14rem;
+    background:
+      radial-gradient(40% 60% at 15% 40%, var(--accent-border), transparent 70%),
+      radial-gradient(35% 55% at 55% 30%, rgba(15, 157, 138, 0.18), transparent 70%);
+    filter: blur(28px);
+    opacity: 0.8;
+    pointer-events: none;
+    animation: hero-glow 12s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes hero-glow {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(6%, 8%, 0) scale(1.08);
+  }
+}
+
+// Staggered entrance for the hero, photo and chips
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.post-header .post-title,
+.post-header .desc,
+.post .profile,
+.post .clearfix > p,
+.interest-chips .chip {
+  opacity: 0;
+  animation: rise-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+.post-header .post-title { animation-delay: 0.05s; }
+.post-header .desc { animation-delay: 0.2s; }
+.post .profile { animation-delay: 0.3s; }
+.post .clearfix > p:nth-of-type(1) { animation-delay: 0.4s; }
+.post .clearfix > p:nth-of-type(2) { animation-delay: 0.5s; }
+.post .clearfix > p:nth-of-type(3) { animation-delay: 0.6s; }
+@for $i from 1 through 6 {
+  .interest-chips .chip:nth-child(#{$i}) {
+    animation-delay: #{0.65 + $i * 0.08}s;
+  }
+}
+
+// Profile photo: gentle lift on hover
+.post .profile img {
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+
+  &:hover {
+    transform: translateY(-4px) rotate(-0.6deg);
+    box-shadow: 0 16px 32px -16px var(--global-theme-color) !important;
+  }
+}
+
+// Scroll reveal (classes added by assets/js/reveal.js; no JS = always visible)
+.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Nav links: animated underline
+.navbar .nav-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.2rem;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--global-theme-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+
+  &:hover::after,
+  .active > &::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-header::before {
+    animation: none;
+  }
+
+  .post-header .post-title,
+  .post-header .desc,
+  .post .profile,
+  .post .clearfix > p,
+  .interest-chips .chip {
+    opacity: 1;
+    animation: none;
+  }
+
+  .js-reveal .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+// Institution logos in the about timelines
+ul.about-timeline li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  &::before {
+    top: 0.85rem;
+  }
+}
+
+.timeline-logo {
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 3px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--global-divider-color);
+  object-fit: contain;
+}
+
+// Kuriboh next to the tagline
+.hero-tagline {
+  align-items: center;
+}
+
+.hero-kuriboh {
+  width: 1.9em;
+  height: 1.9em;
+  object-fit: contain;
+  margin-right: 0.15em;
+  transform-origin: 50% 90%;
+  animation: kuriboh-bob 2.8s ease-in-out 2.2s infinite;
+  cursor: pointer;
+
+  &:hover {
+    animation: kuriboh-wiggle 0.5s ease-in-out infinite;
+  }
+}
+
+@keyframes kuriboh-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes kuriboh-wiggle {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-kuriboh,
+  .hero-kuriboh:hover {
+    animation: none;
+  }
+}
+
+// Trophy before "Awards"
+.about-details h2 .fa-trophy {
+  font-size: 0.8em;
+  margin-right: 0.3rem;
+  color: #e0a526;
+}
+
+// Outside the lab
+.interest-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.interest-group {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px) rotate(-0.4deg);
+  }
+
+  .interest-group-title {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: var(--global-theme-color);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0.15rem 0;
+    font-size: 0.92rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interest-group:hover {
+    transform: none;
+  }
+}
+
+// Short note under a long author list (bib field `author_note`)
+.publications .author-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--global-theme-color);
+}
+
+// Hugging Face logo on dataset cards
+.project-card-title .hf-logo {
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 0.4rem;
+  vertical-align: -0.3em;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .hf-logo {
+  transform: rotate(-12deg) scale(1.1);
+}
+
+// Icons on publication buttons
+.publications .links .btn {
+  i {
+    margin-right: 0.3em;
+    font-size: 1.05em;
+    vertical-align: -0.05em;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover i {
+    transform: scale(1.15);
+  }
+
+  .ai-arxiv {
+    color: #b31b1b;
+  }
+  .fa-file-pdf {
+    color: #e5252a;
+  }
+  &:hover .ai-arxiv,
+  &:hover .fa-file-pdf {
+    color: inherit;
+  }
+}

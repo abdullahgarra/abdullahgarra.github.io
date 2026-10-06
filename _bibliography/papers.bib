@@ -1,115 +1,65 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
+@article{garra2026telltail,
+  title={The TellTail of Embeddings: Fingerprinting Retrievers in Black-Box Systems},
+  author={Garra, Abdullah and Ben-Tov, Matan and Sharif, Mahmood},
+  eprint={2610.04026},
+  journal={arXiv},
+  year={2026},
+  month={oct},
+  abbr={arXiv},
+  arxiv={2610.04026},
+  code={https://github.com/abdullahgarra/telltail},
+  pdf={https://arxiv.org/pdf/2610.04026},
+  abstract={Dense embedding models are core to modern text retrieval, enabling systems ranging from web search to retrieval-augmented generation (RAG). Yet, retrievers are usually deployed within opaque systems, exposing only ranked results, cited sources, or generated answers. This opacity prevents users from verifying which retrievers providers serve and may create a false sense of robustness against retrieval attacks. We show that attackers can infer retrievers' identity only through queries. We introduce TellTail, a fingerprinting attack for identifying retrievers behind black-box systems across a spectrum of access levels. Despite sharing many properties, retrievers can be steered to emit distinct results. When retrieved passages are exposed, TellTail compares retrieval overlap to deduce the underlying model. When only the final generated response is exposed, TellTail optimizes model-specific queries that induce a chosen retrieval behavior on the target retriever but transfer poorly to others. Interestingly, the poor transferability that limits attacks elsewhere is exactly what makes them useful for fingerprinting. We evaluate TellTail using 53 retrievers under three increasingly restrictive settings. TellTail perfectly identifies the deployed retriever from full retrieval rankings; in 94.3\% of attempts with unordered top-3 results; and in 92.5\% of cases from language-model-generated answers alone. Furthermore, fingerprinting succeeds against a popular RAG system (OpenWebUI). Overall, TellTail shows that retrieval-based systems leak the identity of their embedding model---exposing intellectual property and enabling reconnaissance ahead of model-specific attacks such as corpus poisoning.},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  selected={true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@article{fesenko2026forecasting,
+  title={Forecasting Cybersecurity Incidents Using Geopolitical Data and Large Language Models},
+  author={Fesenko*, Mark and Garra*, Abdullah and Harel, Yaniv and Sharif, Mahmood},
+  eprint={2610.04798},
+  journal={arXiv},
+  year={2026},
+  month={oct},
+  abbr={arXiv},
+  arxiv={2610.04798},
+  pdf={https://arxiv.org/pdf/2610.04798},
+  abstract={Predicting security incidents is a profound task critical for informing proactive defensive measures and cyber-insurance policies. Prior work tackling this problem mainly utilized structured, manually defined features based on network measurements (e.g., protocol misconfigurations). Still, despite leading to promising performance, the network-based features may fail to capture aspects related to adversaries' motives. To fill this gap, our work leverages geopolitical data mined from public sources--which may help capture attacker motives--to forecast security incidents. Specifically, our approach relies on news articles and transcribed podcasts that are fed to large language models to automatically produce rich representations. The representations are then fed to a classifier trained to forecast future incidents based on historical ones. Our evaluation with a large incidents dataset (>15,700 records) demonstrates substantial accuracy (71.4\% ROC AUC) with geopolitical data alone. Notably, combining geopolitical data and network measurements outperforms the state-of-the-art technique based on network features alone (81.3\% vs.77.5\% ROC AUC). Our analysis also helps shed light on when geopolitical data is most helpful and the data sources that are most useful for accurate forecasting.},
+  annotation={* Equal contribution},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  selected={true}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+@article{garra2026collusion,
+  title={Mitigating Emergent Collusion in LLM Pricing Agents},
+  author={Garra, Abdullah},
+  eprint={2609.13037},
+  journal={arXiv},
+  year={2026},
+  month={sep},
+  abbr={arXiv},
+  arxiv={2609.13037},
+  pdf={https://arxiv.org/pdf/2609.13037},
+  abstract={Recent work shows that LLM-based pricing agents can produce supracompetitive outcomes in repeated oligopoly environments without being explicitly instructed to collude. We reproduce the qualitative prompt-sensitivity effect of Fish et al. using DeepSeek-V3.1: the P1 prompt produces significantly higher prices and profits than P2, although our outcomes are less monopoly-like than the original GPT-4 results. We then evaluate three regulatory interventions: a prompt-only warning, a Harrington-inspired expected-damages payoff regulator, and an active random entrant. The prompt-only regulator reduces but does not eliminate above-Nash pricing. The Harrington regulator brings P1 outcomes close to the duopoly Nash benchmark and removes the statistically significant P1--P2 gap. The active entrant produces the strongest effect, pushing both prompts below the appropriate random-entrant Nash benchmark. Overall, our experiments provide preliminary evidence that interventions that alter incentives or market participation can reduce supracompetitive pricing more effectively than prompt warnings alone.},
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+  additional_info={. Course project.}
 }
 
-@book{przibram1967letters,
+@article{wang2026trustworthy,
+  title={Towards Trustworthy Physical Intelligence: From Theory to Practice Across Life Cycle},
+  author={Wang, Yang and Liu, Hongxuan and Xu, Xinghui and Menon, Arjun and Cai, Xiaoran and He, Yunyu and Tarvo, Alex and Zhou, Jingzong and Ma, Mengzhong and Wei, Xinpeng and Yu, Yi and Wang, Shaobo and Peng, Cheng and Jiao, Aoran and Korolev, Alexei and Zhang, Yanyan and Ye, Kai and Li, Xinpeng and Guo, Chengquan and Fu, Jingjing and Bai, Nicholas and He, Yongjun and Ren, Junru and Ren, Silei and Shehab, Mohamad Louai and Cai, Keshu and Dennler, Nathaniel and Tus, Traian and Zhou, Gaoyue and Garra, Abdullah and Nakamura, Mason and Ortiz, George and Urbanas, Marius and Johannsmeier, Lars and Sharma, Rohit and Deshmukh, Suraj and Spranger, Michael and Gupta, Vinayak and Chen, Xu and Banerjee, Ashis G. and Feng, Yuxiang and Bengio, Yoshua and Qi, Peng},
+  eprint={2607.22877},
+  journal={arXiv},
+  year={2026},
+  month={jul},
+  abbr={arXiv},
+  arxiv={2607.22877},
+  pdf={https://arxiv.org/pdf/2607.22877},
+  abstract={Physical intelligence refers to intelligence systems that understand, reason about, and act in accordance with the physical world and its underlying laws, dynamics, and constraints. Unlike conventional AI systems, physical intelligence interacts continuously with uncertain physical environments, and its actions produce consequences that are physically irreversible. As existing trustworthy AI frameworks have been developed primarily for digital AI systems, they do not fully capture the distinctive challenges of Physical Intelligence, such as physical safety, cyber-physical security, and physical manufacturing process. To address this gap, we present a survey of trustworthy physical intelligence principles. First, we characterize the core capabilities and challenges of physical intelligence. Second, we examine the role of physics in AI. Third, we trace the end-to-end physical intelligence life cycle across five core stages and introduce Trustworthy Physical Intelligence Operationalization (T-PAIO). Fourth, we develop the Trustworthy Physical Intelligence (T-PAI) framework, a theoretical framework that organizes key trustworthiness principles and provides a foundation for governing trustworthy physical intelligence systems.},
+  author_note={Co-authors include Abdullah Garra and Yoshua Bengio},
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+  selected={true}
 }
