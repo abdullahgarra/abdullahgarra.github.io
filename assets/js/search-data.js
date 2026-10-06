@@ -4,20 +4,27 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-cv",
-          title: "cv",
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "preprints and papers, newest first.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-teaching",
-          title: "teaching",
+          title: "Teaching",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -403,14 +410,14 @@ ninja.data = [{
           section: "News",},{id: "news-published-my-course-project-mitigating-emergent-collusion-in-llm-pricing-agents-on-arxiv-for-the-community",
           title: '📄 Published my course project, Mitigating Emergent Collusion in LLM Pricing Agents, on...',
           description: "",
-          section: "News",},{id: "news-telltail-is-now-my-first-paper-on-arxiv-the-telltail-of-embeddings-fingerprinting-retrievers-in-black-box-systems",
-          title: '📄 TellTail is now my first paper on ArXiv, The TellTail of Embeddings:...',
+          section: "News",},{id: "news-telltail-my-first-paper-as-lead-author-is-now-on-arxiv-the-telltail-of-embeddings-fingerprinting-retrievers-in-black-box-systems",
+          title: '📄 TellTail, my first paper as lead author, is now on arXiv: The...',
           description: "",
-          section: "News",},{id: "news-excited-to-be-a-co-author-on-towards-trustworthy-physical-ai-from-theory-to-practice-across-life-cycle-alongside-an-incredible-group-of-researchers-including-yoshua-bengio",
-          title: '🔥 Excited to be a co-author on Towards Trustworthy Physical AI: From Theory...',
+          section: "News",},{id: "news-excited-to-be-a-co-author-on-towards-trustworthy-physical-intelligence-from-theory-to-practice-across-life-cycle-alongside-an-incredible-group-of-researchers-including-yoshua-bengio",
+          title: '🔥 Excited to be a co-author on Towards Trustworthy Physical Intelligence: From Theory...',
           description: "",
           section: "News",},{id: "news-another-paper-is-now-on-arxiv-forecasting-cybersecurity-incidents-using-geopolitical-data-and-large-language-models",
-          title: '🚀 Another paper is now on ArXiv: Forecasting Cybersecurity Incidents Using Geopolitical Data...',
+          title: '🚀 Another paper is now on arXiv: Forecasting Cybersecurity Incidents Using Geopolitical Data...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -462,7 +469,14 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%67%61%72%72%61%61%62%64%75%6C%6C%61%68@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%61%67%61%72%72%61%68@%75%6D%61%73%73.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=vqaZDHcAAAAJ", "_blank");
         },
       },{
         id: 'social-github',
