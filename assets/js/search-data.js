@@ -404,7 +404,7 @@ ninja.data = [{
           title: '📄 Published my course project, Mitigating Emergent Collusion in LLM Pricing Agents, on...',
           description: "",
           section: "News",},{id: "news-telltail-is-now-my-first-paper-on-arxiv-the-telltail-of-embeddings-fingerprinting-retrievers-in-black-box-systems",
-          title: '📄 TellTail is now my first paper on ArXiv, *The TellTail of Embeddings:...',
+          title: '📄 TellTail is now my first paper on ArXiv, The TellTail of Embeddings:...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
