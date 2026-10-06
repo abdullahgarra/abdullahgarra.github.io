@@ -270,8 +270,7 @@ ul.about-timeline {
     z-index: -1;
     inset: -2.5rem -2rem auto -2rem;
     height: 14rem;
-    background:
-      radial-gradient(40% 60% at 15% 40%, var(--accent-border), transparent 70%),
+    background: radial-gradient(40% 60% at 15% 40%, var(--accent-border), transparent 70%),
       radial-gradient(35% 55% at 55% 30%, rgba(15, 157, 138, 0.18), transparent 70%);
     filter: blur(28px);
     opacity: 0.8;
@@ -310,12 +309,24 @@ ul.about-timeline {
   animation: rise-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
 }
 
-.post-header .post-title { animation-delay: 0.05s; }
-.post-header .desc { animation-delay: 0.2s; }
-.post .profile { animation-delay: 0.3s; }
-.post .clearfix > p:nth-of-type(1) { animation-delay: 0.4s; }
-.post .clearfix > p:nth-of-type(2) { animation-delay: 0.5s; }
-.post .clearfix > p:nth-of-type(3) { animation-delay: 0.6s; }
+.post-header .post-title {
+  animation-delay: 0.05s;
+}
+.post-header .desc {
+  animation-delay: 0.2s;
+}
+.post .profile {
+  animation-delay: 0.3s;
+}
+.post .clearfix > p:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+.post .clearfix > p:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+.post .clearfix > p:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
 @for $i from 1 through 6 {
   .interest-chips .chip:nth-child(#{$i}) {
     animation-delay: #{0.65 + $i * 0.08}s;
