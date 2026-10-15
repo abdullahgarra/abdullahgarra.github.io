@@ -1,0 +1,113 @@
+% Abdullah Garra - one-page CV
+% Build: latexmk -pdf AbdullahGarra_CV.tex
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.6in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{XCharter}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+% UMass maroon
+\definecolor{maroon}{HTML}{881C1C}
+\definecolor{github}{HTML}{181717}
+\definecolor{linkedin}{HTML}{0A66C2}
+\definecolor{scholar}{HTML}{4285F4}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\linespread{1.06}
+
+\titleformat{\section}{\large\bfseries\scshape\color{maroon}}{}{0em}{}[\vspace{-0.55em}\color{maroon}\rule{\linewidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.1em,itemsep=2pt,parsep=0pt,topsep=2pt,partopsep=0pt,label={\color{maroon}\textbullet}}
+
+% \entry{Left bold}{Right}{Left italic}{Right italic}
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill #2%
+  \if\relax\detokenize{#3}\relax\else\\\textit{#3}\hfill\textit{#4}\fi\par\vspace{2pt}}
+\newcommand{\sub}[1]{\textit{\color{maroon!85!black}#1}\par\vspace{1pt}}
+\newcommand{\me}{\textbf{A.~Garra}}
+\newcommand{\paper}[1]{\href{https://arxiv.org/abs/#1}{\color{maroon}[paper]}}
+\newcommand{\sep}{\enspace{\color{gray}|}\enspace}
+
+\begin{document}
+
+% ------------------------------------------------------------------ Header
+\begin{center}
+  {\Huge\textbf{Abed Garra}}\\[5pt]
+  \small
+  {\color{maroon}\faPhone*}~+1 (413) 466-5981\sep
+  {\color{maroon}\faEnvelope}~\href{mailto:agarrah@umass.edu}{agarrah@umass.edu}\sep
+  {\color{maroon}\faGlobe}~\href{https://abdullahgarra.github.io}{abdullahgarra.github.io}\\[2pt]
+  {\color{github}\faGithub}~\href{https://github.com/abdullahgarra}{github.com/abdullahgarra}\sep
+  {\color{linkedin}\faLinkedin}~\href{https://www.linkedin.com/in/abdullahgarra}{linkedin.com/in/abdullahgarra}\sep
+  {\color{scholar}\faGraduationCap}~\href{https://scholar.google.com/citations?user=vqaZDHcAAAAJ}{Google Scholar}
+\end{center}
+\vspace{-2pt}
+
+% ------------------------------------------------------------------ Education
+\section{Education}
+\entry{University of Massachusetts Amherst}{Sep 2026 -- Present \textbf{(Expected 05/31)}}{Ph.D.\ in Computer Science; Advisor: Prof.\ Eugene Bagdasarian}{Amherst, MA, USA}
+\entry{Tel Aviv University}{2024 -- 2026}{M.Sc.\ in Computer Science, GPA 96/100; Advisor: Dr.\ Mahmood Sharif}{Tel Aviv, Israel}
+\vspace{-2pt}{\small Thesis: \textbf{\textit{The TellTail of Embeddings: Fingerprinting Retrievers in Black-Box Systems}}}\par
+\textit{B.Sc.\ in Computer Science}\par\vspace{2pt}
+
+% ------------------------------------------------------------------ Research
+\section{Research Experience}
+\entry{Graduate Researcher, PLUS Lab, Tel Aviv University}{Dec 2023 -- 2026}{}{}
+\sub{Fingerprinting retrievers in black-box systems (M.Sc.\ thesis) [1]}
+\begin{itemize}
+  \item Built TellTail, a black-box \textbf{fingerprinting} attack that identifies the embedding model behind retrieval and RAG systems.
+  \item Evaluated on \textbf{53 embedding retrievers} in an \textbf{open-world} setting (19 known, 34 unknown).
+  \item Achieved \textbf{92.5\%} attack success rate (ASR) from LLM responses alone.
+  \item Fingerprinted the retriever behind \textbf{OpenWebUI}, an open-source RAG deployment.
+\end{itemize}
+\sub{Forecasting cyber incidents with LLMs [2]}
+\begin{itemize}
+  \item Engineered an LLM pipeline turning news and podcasts into features to forecast \textbf{15,700+} security incidents.
+  \item Ran \textbf{Internet-wide scans} on multiple ports with ZMap and built DNS infrastructure for network measurements.
+  \item Reached \textbf{81.3\%} ROC AUC vs.\ 77.5\% for the prior state of the art; trained Longformer with multi-GPU DDP.
+\end{itemize}
+
+% ------------------------------------------------------------------ Datasets
+\section{Open-Source Datasets}
+\begin{itemize}[label={}, leftmargin=0pt]
+  \item \textbf{Dense retrieval indexes} (\href{https://huggingface.co/datasets/AbedGarra/msmarco-indexes}{\color{maroon}Hugging Face}): Pre-built FAISS indexes of MS MARCO for 53 embedding models [1].
+  \item \textbf{News corpus} (\href{https://huggingface.co/datasets/AbedGarra/ccnews2024plus}{\color{maroon}Hugging Face}): Deduplicated extension of CC-News from June 2024 onward, \textbf{actively maintained} [2].
+\end{itemize}
+
+% ------------------------------------------------------------------ Publications
+\section{Publications \normalfont\small(* equal contribution)}
+\begin{enumerate}[leftmargin=1.7em,itemsep=2pt,parsep=0pt,topsep=2pt,label={\color{maroon}[\arabic*]}]
+  \item \me, M.~Ben-Tov, M.~Sharif. The TellTail of Embeddings: Fingerprinting Retrievers in Black-Box Systems. \textit{arXiv}, 2026 (submitted to SaTML).~\paper{2610.04026}~\href{https://github.com/abdullahgarra/telltail}{\color{maroon}[code]}
+  \item \me*, M.~Fesenko*, Y.~Harel, M.~Sharif. Forecasting Cybersecurity Incidents Using Geopolitical Data and Large Language Models.
+        \textit{arXiv}, 2026.~\paper{2610.04798}
+  \item Y.~Wang, H.~Liu, X.~Xu, et al.\ (43 authors, incl.\ \me). Towards Trustworthy Physical Intelligence: From
+        Theory to Practice Across Life Cycle. \textit{arXiv}, 2026.~\paper{2607.22877}
+  \item H.~Abu-Kishk, M.~Dahan, \me. Between Reflection and Construction: AI as the New Orientalism?
+        \textit{Journal of Information, Communication and Ethics in Society}, 2026.~\href{https://doi.org/10.1108/jices-07-2025-0169}{\color{maroon}[paper]}
+  \item \me. Mitigating Emergent Collusion in LLM Pricing Agents. \textit{arXiv}, 2026.~\paper{2609.13037}
+\end{enumerate}
+
+% ------------------------------------------------------------------ Teaching
+\section{Teaching}
+\entry{Teaching Assistant, Tel Aviv University}{Feb 2025 -- Sep 2025}{}{}
+\begin{itemize}
+  \item Mentored student teams through real-world ML-for-security projects in two graduate workshops:
+        \textit{Usable Security \& Privacy} (Dr.\ Mahmood Sharif) and \textit{Intrusion Detection with ML} (Dr.\ David Movshovitz).
+\end{itemize}
+\textbf{Software Project Grader} (Apr -- Oct 2024) and \textbf{Calculus Tutor} (Sep 2022 -- Apr 2023), Tel Aviv University
+
+% ------------------------------------------------------------------ Languages
+\section{Languages}
+Arabic (native), English (fluent; TOEFL iBT 111/120), Hebrew (fluent)
+
+\end{document}
