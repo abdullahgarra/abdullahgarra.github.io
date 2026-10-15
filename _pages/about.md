@@ -29,7 +29,7 @@ latest_posts:
 
 I am a first-year Ph.D. student in Computer Science at [UMass Amherst](https://www.cics.umass.edu/), advised by [Prof. Eugene Bagdasarian](https://people.cs.umass.edu/~eugene/).
 
-My research sits at the intersection of computer security and machine learning. I study how AI systems fail under adversarial pressure and how to make them trustworthy, from adversarial behavior and fingerprinting of deployed models, to secure LLM- and RAG-based systems, to using machine learning for security itself.
+I see two ways advanced AI can stay safe: AI that is aligned and safe by design, and systems secure enough to contain it when it isn't. I strive toward both, doing whatever I can to make at least one of them achievable. That is what draws me to studying how AI systems can be misused or pushed to fail, and how to keep them under meaningful human control.
 
 Before joining UMass Amherst, I completed my M.Sc. in Computer Science at [Tel Aviv University](https://english.tau.ac.il/), where I was a member of the Privacy, Learning, Usability, and Security ([PLUS](https://plus-tau.github.io/)) research group advised by [Dr. Mahmood Sharif](https://mahmoods01.github.io/).
 
